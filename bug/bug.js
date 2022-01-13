@@ -4,6 +4,8 @@
  * @param n2 
  * @returns 
  */
-export const addTwoNumbers = (n1: number, n2: number) => {
+addTwoNumbers = (n1, n2) => {
     return n1 + n2;
 };
+
+module.exports = addTwoNumbers;

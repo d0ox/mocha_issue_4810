@@ -4,30 +4,10 @@
   "description": "Reproducing bug  #4810 for mochajs/mocha",
   "main": "index.js",
   "devDependencies": {
-    "@types/chai": "^4.2.11",
-    "@types/mocha": "^7.0.2",
-    "@types/node": "14.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.9.0",
-    "@typescript-eslint/parser": "^5.9.0",
     "chai": "^4.2.0",
-    "chalk": "^4.1.2",
-    "clear": "^0.1.0",
-    "commander": "^8.3.0",
-    "eslint": "^8.6.0",
-    "figlet": "^1.5.2",
-    "mocha": "^7.2.0",
-    "mocha-cakes-2": "^3.3.0",
-    "nyc": "^15.1.0",
-    "path": "^0.12.7",
-    "standard-version": "^9.3.2",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.4.3"
+    "mocha": "^7.2.0"
   },
   "scripts": {
-    "test": "mocha -r ts-node/register --ui mocha-cakes-2 'specs/**/*.spec.ts'",
-    "test-single": "mocha -r ts-node/register --ui mocha-cakes-2",
-    "build": "npm test && tsc",
-    "oc-cli": "npx ts-node lib/oc-cli.ts",
-    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ."
+    "test": "mocha 'specs/**/*.spec.js'"
   }
 }

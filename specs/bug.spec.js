@@ -1,7 +1,5 @@
-import { expect } from 'chai';
-import 'mocha-cakes-2';
-import { addTwoNumbers } from '../bug/bug';
-
+const expect = require('chai').expect;
+const addTwoNumbers = require('../bug/bug');
 
 
 describe('Adding two numbers', () => {
